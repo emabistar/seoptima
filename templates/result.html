@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >SEO Analysis Results</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+   <div>
+    <h1 class=" flex items-center justify-center">SEO Analysis Results for {{ url }}</h1>
+    <div class="container mx-auto px-4 ">
+    <table class="table-fixed border-separate border-spacing-2  border border-slate-400">
+        <thead>
+        <tr>
+        <th class="border border-slate-300">Title</th>
+        <th class="border border-slate-300">Description</th>
+
+
+        <th class="border border-slate-300">Sentiment Polarity</th>
+        <th class="border border-slate-300">Sentiment Subjectivity</th>
+        <th class="border border-slate-300">Suggested Keywords</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-slate-300">{{ title }}</td>
+                <td class="border border-slate-300">{{ description }}</td>
+
+
+                <td class="border border-slate-300">{{ polarity }}</td>
+                <td class="border border-slate-300">{{ subjectivity }}</td>
+                <td class="border border-slate-300">{{ keywords }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</body>
+</html>
